@@ -8,6 +8,24 @@
     background-color: #151515;
 }
 
+.splash-text{
+    background-image:radial-gradient(circle at 30% 40%, rgb(71, 66, 66), rgb(48, 48, 31), 60%, rgb(207, 180, 31));
+    border-radius: 60px;
+    margin-top: 20px;
+    padding-left:  10px;
+    padding-right: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.splash-paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icon-wrapper svg {
     width: 200px;
     height: 200px;
@@ -40,17 +58,29 @@ button {
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1em;
-    font-weight: 500;
+    font-weight:bold;
     font-family: inherit;
-    background-color: #f3f1f1;
+    background-color: rgb(224, 211, 25);
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: ease 0.3s;
+    color: #000000;
   }
   button:hover {
-    border-color: #aed122;
-    background-color: rgb(224, 211, 25);
+    border-color: #131106;
+    background-color: rgb(155, 147, 28);
   }
   button:focus,
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
+
+  .dev-footnote p{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 0.8em;
+    color: #807e7e;
+
+  }
+
+ 

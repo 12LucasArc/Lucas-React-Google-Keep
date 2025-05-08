@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from './components/auth/Form';
 import MainUI from './components/ui/MainUI';
+import "./App.css";
+
 
 const App = () => {
   const [showMainUI, setShowMainUI] = useState(false);
