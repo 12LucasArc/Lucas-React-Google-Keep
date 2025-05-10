@@ -33,6 +33,7 @@ nav {
     height: 95%;
     font-size: 1rem;
     margin-left: 10px;
+    color: black;
   }
   input:focus {
     outline: none;
