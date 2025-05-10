@@ -51,7 +51,7 @@
     }
 }
 
-button {
+#start {
     width: 200px;
     height: 40px;
     border-radius: 8px;
@@ -65,12 +65,12 @@ button {
     transition: ease 0.3s;
     color: #000000;
   }
-  button:hover {
+  #start:hover {
     border-color: #131106;
     background-color: rgb(155, 147, 28);
   }
-  button:focus,
-  button:focus-visible {
+  #start:focus,
+  #start:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
 
