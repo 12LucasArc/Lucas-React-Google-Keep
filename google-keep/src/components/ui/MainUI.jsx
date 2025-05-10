@@ -1,7 +1,12 @@
+import React from 'react';
+import Navbar from './Navbar';
+import './MainUI.css';
+
+
 const MainUI = () => {
     return (
-        <div>
-            <h1>Welcome to the Main UI!</h1>
+        <div className="main-ui">
+            <Navbar />
 
         </div>
     );
