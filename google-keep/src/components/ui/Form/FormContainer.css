@@ -70,11 +70,16 @@
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    color:#5f6368
+    color:#5f6368;
+    
   }
 
-  .close-btn {
-    background-color: none;
+  .close-btn:hover {
+    background-color: #fcf0c8;
+    border-radius: 25px;
+    opacity: 0.8;
+    color: black;
+    
   }
   
   .small-icon {
