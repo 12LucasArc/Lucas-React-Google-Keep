@@ -16,6 +16,7 @@
   }
   
   .note-text {
+    color: black;
     border: none;
     font-size: 1rem;
     height: 100%;
@@ -28,6 +29,7 @@
   }
   
   .note-title {
+    color: black;
     border: none;
     font-size: 1rem;
     height: 100%;
