@@ -45,15 +45,14 @@
     display: flex;
   }
   
-  /* .active-form {
-    display: none;
-  } */
+
   
   .form {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    width: 100%;
-    padding: 10px;
+    width: 30rem;
+  
   }
   
   .form .form-actions .icons {
@@ -88,3 +87,5 @@
     color: rgb(102, 96, 96);
     font-size: 1.1rem;
   }
+
+  

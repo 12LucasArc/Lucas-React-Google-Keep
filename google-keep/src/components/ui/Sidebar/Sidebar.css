@@ -4,17 +4,13 @@
   font-family: "Roboto", sans-serif;
 }
 
-
-
 .sidebar {
     position: fixed;
     left: 0;
     top: 64px;
-    display: flex;
-    flex-direction: column;
     margin-top: 5px;
     color: #5f6368;
-    width: 80px;
+    width: 150px;
     overflow-x: hidden;
     transition: 0.8s;
     height: 100%;

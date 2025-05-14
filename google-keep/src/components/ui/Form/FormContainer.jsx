@@ -1,24 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './formContainer.css';
 
-const FormContainer = ({ onAddNote }) => {
+const FormContainer = ({ onAddNote, editingNote, onUpdateNote, clearEditingNote }) => {
   const [title, setTitle] = useState('');
   const [text, setText] = useState('');
+
+  useEffect(() => {
+    if (editingNote) {
+      setTitle(editingNote.title);
+      setText(editingNote.text);
+    }
+  }, [editingNote]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!title.trim() && !text.trim()) return;
+   if (title.trim()=== '' && text.trim() === '') return;
 
-    const newNote = {
-      id: Date.now(), // simple unique ID
+   if (editingNote) {
+    onUpdateNote({
+      ...editingNote,
       title: title.trim(),
       text: text.trim(),
-    };
+    });
+    clearEditingNote();
+   } else {
+    onAddNote({
+      id: Date.now(),
+      title: title.trim(),
+      text: text.trim(),
+    });
+   }
 
-    onAddNote(newNote);       // send note to parent
-    setTitle('');             // clear inputs
-    setText('');
+   setTitle('');
+   setText('');
   };
 
   return (
@@ -81,8 +96,8 @@ const FormContainer = ({ onAddNote }) => {
           </div>
           </div>
 
-          <button className="close-btn" type="submit">
-            Add Note
+          <button type="submit" className="close-btn">
+                  {editingNote ? 'Update Note' : 'Add Note'}
           </button>
         </div>
       </form>

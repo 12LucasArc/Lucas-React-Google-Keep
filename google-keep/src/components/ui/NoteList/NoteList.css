@@ -1,37 +1,98 @@
-
 .note-list {
     display: flex;
-    justify-content:flex-end;
-    width: 400px;
-    position: absolute;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-left: 25rem;
-    margin-right: 15rem;
     flex-wrap: wrap;
-  }
-  
-  .note-card {
-    background: #f1bf42;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    gap: 16px;
+    padding: 16px;
+    margin-left: 260px; 
+    box-sizing: border-box;
+    
   }
 
-  .note-card:hover {
+  .note {
+    background: white;
+    color: black;;
+    width: 200px;
+    height: 180px;
+    padding: 12px;;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    
+    
+  }
+  
+  .note:hover {
+    background-color: #f1bf42;
     cursor: pointer;
     box-shadow: 0 1px 2px 0 rgba(81, 79, 71, 0.302),
     0 2px 6px 2px #f1bf42;
   }
   
-  .delete-btn {
-    position: absolute;
-    top: 0.25rem;
-    right: 0.25rem;
-    background: transparent;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
+.note h3{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;;
+}
+
+.note p {
+    font-size: 14px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+  .note-footer .material-symbols-outlined  {
+    background-color: none;
   }
 
+  .note-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .small-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #5f6368;
+  }
+
+
+  .delete-icon:hover {
+    color: red;
+
+  }
+  
+
+  .tooltip-text{
+    position: absolute;
+    background-color: #f1bf42;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .empty-message {
+    font-size: 18px;
+    color: black;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+  }
   

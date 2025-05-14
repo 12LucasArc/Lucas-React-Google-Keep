@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Form from './components/auth/splashScreen';
-import MainUI from './components/ui/MainUI';
+import MainUI from './components/ui/MainUI/MainUI';
 import "./App.css";
 
 
